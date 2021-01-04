@@ -8,30 +8,60 @@ body {
 }
 
 header {
+    background-color: black;
+    color: seashell;
+    position: fixed;
     display: flex;
     width: 100%;
     justify-content: space-between;
+    opacity: 0.7;
 }
 
 .logo {
+    height: 2.4rem;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.5rem;
     padding: 0.35rem;
 }
 
 .menu {
-    align-content: center;
-    align-items: center;
+    margin-right: 0.5rem;
 }
 
 .menu a {
+    height: 2.4rem;
     display: inline-flex;
     padding: 0.3rem;
+    align-items: center;
 }
 
 a:link, a:visited {
-    color: black;
+    color: seashell;
     text-decoration: underline;
 }
 
 a:hover, a:active {
+    color: seashell;
+}
+
+.banner {
+    background-image: url("img/background-banner.jpg");
+    height: 34.54rem;
+    max-width: 100%;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    z-index: -20;
+    place-content: center;
+    place-items: center;
+}
+
+#logo2 {
+    background-color: seashell;
     color: black;
+    text-align: center;
+    width: 100%;
+    opacity: 0.8;
+    font-size: 3rem;
 }
