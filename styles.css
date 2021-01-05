@@ -207,3 +207,10 @@ a:hover, a:active {
         bottom: 3rem;
     }
 }
+
+footer {
+    color: seashell;
+    background-color: black;
+    text-align: center;
+    padding: 0.5rem;
+}
