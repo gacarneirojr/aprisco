@@ -1,4 +1,4 @@
-html {
+tml {
     font-size: 22px;
 }
 
@@ -143,6 +143,7 @@ a:hover, a:active {
 .congregacoes {
     margin: 0 auto;
     alignment: center;
+
 }
 
 .congregacoes h1 {
@@ -191,7 +192,9 @@ a:hover, a:active {
 }
 
 @media only screen and (max-width: 800px) {
-
+    .congregacoes {
+        height: 80rem;
+    }
     .unidades {
         display: block;
         width: 15rem;
