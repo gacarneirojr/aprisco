@@ -39,6 +39,12 @@ header {
     align-items: center;
 }
 
+@media only screen and (max-width: 500px) {
+    .menu {
+        display: none;
+    }
+}
+
 a:link, a:visited {
     color: seashell;
     text-decoration: underline;
@@ -79,13 +85,26 @@ a:hover, a:active {
 
 .tmissao h2{
     font-size: 2rem;
-    width: 20rem;
+    width: 12rem;
     height: auto;
     margin: 7rem 3rem;
 }
 
 .pmissao p {
     margin: 4rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .missao {
+        display: block;
+    }
+    .tmissao h2 {
+        margin: 1rem;
+    }
+    .pmissao p {
+        margin: 1rem;
+    }
+
 }
 
 .credo {
@@ -97,11 +116,94 @@ a:hover, a:active {
 
 .tcredo h2{
     font-size: 2rem;
-    width: 20rem;
+    width: 12rem;
     height: auto;
     margin: 7rem 3rem;
 }
 
 .pcredo p {
     margin: 4rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .credo {
+     flex-direction: column-reverse;
+
+    }
+    .tcredo h2 {
+        margin: 1rem;
+    }
+    .pcredo p {
+        margin: 1rem;
+        width: auto;
+    }
+
+}
+
+.congregacoes {
+    margin: 0 auto;
+    alignment: center;
+}
+
+.congregacoes h1 {
+    text-align: center;
+}
+
+.unidades {
+    display: inline-flex;
+    text-align: center;
+    width: 100%;
+    height: 13.64rem;
+    object-fit: cover;
+    margin: 3rem 0;
+}
+
+.unidades div {
+    font-size: 2rem;
+    margin: 1rem;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+
+}
+.usa {
+    background-image: url("img/USA.png");
+}
+.sede {
+    background-image: url("img/fsa.png");
+}
+.ssa {
+    background-image: url("img/ssa.png");
+}
+.lauro {
+    background-image: url("img/lauro.png");
+}
+
+.unidades p {
+    position: relative;
+    bottom: 5rem;
+}
+
+.lauro p {
+    font-size: 1.75rem;
+    bottom: 4.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .unidades {
+        display: block;
+        width: 15rem;
+        margin: auto;
+    }
+    .unidades div {
+        margin: 5rem 0;
+    }
+    .unidades p {
+        bottom: 3.5rem;
+    }
+    .lauro p {
+        bottom: 3rem;
+    }
 }
